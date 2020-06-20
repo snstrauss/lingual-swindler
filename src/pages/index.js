@@ -12,9 +12,11 @@ const Home = ({ data }) => {
 
   const songs = mapSongs(data);
 
+  const song = songs.filter(song => song.choose)[0];
+
   return (
     <>
-      <SongViewer song={songs[0]}/>
+      <SongViewer song={song}/>
     </>
   )
 }
@@ -29,6 +31,8 @@ export const query = graphql`query MyQuery {
           image
           title
           video
+          artist
+          choose
         }
       }
     }

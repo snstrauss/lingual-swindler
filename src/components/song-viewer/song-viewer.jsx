@@ -5,7 +5,7 @@ import Video from './partials/video/video';
 import Title from './partials/title/title';
 import SocialLink from './partials/social-link/social-link';
 
-export default function SongViewer({ song: { image, links, title, video } }){
+export default function SongViewer({ song: { image, links, title, video, artist } }){
 
     const backgroundStyle = {
         backgroundImage: `url(${image})`
@@ -16,7 +16,8 @@ export default function SongViewer({ song: { image, links, title, video } }){
             <div className={S.backgroundHolder} style={backgroundStyle} />
             <main>
                 <Video src={video}/>
-                <Title title={title} />
+                <Title title={title} artist={artist} />
+
                 {
                     links.map((link) => (
                         <SocialLink key={link} url={link} title={title}/>
