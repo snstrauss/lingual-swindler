@@ -3,6 +3,7 @@ import SongViewer from "../components/song-viewer/song-viewer"
 import { graphql } from 'gatsby';
 
 import './global.scss';
+import { Helmet } from 'react-helmet';
 
 function mapSongs(data){
   return data.allFile.edges.map(e => e.node.childSongsJson);
@@ -16,6 +17,9 @@ const Home = ({ data }) => {
 
   return (
     <>
+      <Helmet>
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+      </Helmet>
       <SongViewer song={song}/>
     </>
   )

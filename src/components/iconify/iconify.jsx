@@ -1,7 +1,5 @@
 import React from 'react';
-import '@iconify/iconify';
-
-import PropTypes from 'prop-types';
+// import '@iconify/iconify';
 
 export default function Iconify({ icon, inline = true, style = {}, height = null }){
 
@@ -14,8 +12,4 @@ export default function Iconify({ icon, inline = true, style = {}, height = null
             style={style}
         />
     );
-}
-
-Iconify.propTypes = {
-    icon: PropTypes.string.isRequired
 }
