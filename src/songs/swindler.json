@@ -1,0 +1,18 @@
+{
+    "choose": true,
+    "artist": "אבנר כהן",
+    "title": "גזלן לשוני",
+    "image": "https://i.ibb.co/8sLfYsX/sodom-laguna.jpg",
+    "video": "B5YNiCfWC3A",
+    "links": {
+        "song": [
+            "https://open.spotify.com/track/3VYzbU22BooAROigHHwycs?si=_9psWMVURjCZZq3Y14dEVA",
+            "https://music.apple.com/us/album/swimming-pools-drank-extended-version/1440821622?i=1440821838",
+            "https://soundcloud.com/kendrick-lamar-music/swimming-pools-drank-1"
+        ],
+        "social": [
+            "https://www.facebook.com/AvnerCohenMusic/",
+            "https://www.youtube.com/channel/UCZy1pXabDQuWMfM38LjLXog"
+        ]
+    }
+}
