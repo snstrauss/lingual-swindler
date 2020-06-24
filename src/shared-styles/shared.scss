@@ -11,3 +11,32 @@
     bottom: 0;
     left: 0;
 }
+
+%link-container {
+    background-color: var(--black);
+    color: white;
+
+    padding: 0 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    --grey-border: #ccc;
+
+    border: 0px solid var(--grey-border);
+
+    border-top-width: 1px;
+
+    position: relative;
+
+    --transition: 0.2s linear;
+    transition: background-color var(--transition);
+
+    &:hover {
+        background-color: #282828;
+    }
+}
