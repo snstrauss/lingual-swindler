@@ -31,7 +31,10 @@ export const query = graphql`query MyQuery {
       node {
         name
         childSongsJson {
-          links
+          links {
+            social
+            song
+          }
           image
           title
           video
