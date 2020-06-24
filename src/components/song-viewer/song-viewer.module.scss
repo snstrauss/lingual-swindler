@@ -9,7 +9,8 @@
 
     .background-holder {
         @extend %background-holder;
-        filter: blur(25px);
+        background-color: #be8d73;
+        filter: blur(15px);
     }
 
     main {
@@ -26,6 +27,11 @@
 
         & > *:not(:first-child) {
             flex: 1;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: row;
         }
     }
 }
