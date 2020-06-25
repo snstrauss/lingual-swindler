@@ -1,11 +1,6 @@
 import React from 'react';
 import Iconify from './iconify';
-
-const brandColors = {
-    spotify: '#00D95A',
-    facebook: '#1878F3',
-    youtube: '#FF0000'
-};
+import { brandColors } from '../../services/brand.service';
 
 export default function BrandIcon({ brand }){
 
