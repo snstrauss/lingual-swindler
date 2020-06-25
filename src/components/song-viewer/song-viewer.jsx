@@ -16,14 +16,14 @@ export default function SongViewer({ song: { image, links: { song: songLinks, so
         <div className={S.container}>
             <div className={S.backgroundHolder} style={backgroundStyle} />
             <main>
-                {/* <Video src={video}/> */}
+                <Video src={video}/>
                 <Title title={title} artist={artist} />
 
-                {/* {
+                {
                     songLinks.map((link) => (
                         <SongLink key={link} url={link}/>
                     ))
-                } */}
+                }
                 {
                     <div className={S.socialContainer}>
                         {
