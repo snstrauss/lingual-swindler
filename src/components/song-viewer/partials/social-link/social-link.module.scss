@@ -2,13 +2,25 @@
 .container {
     @extend %link-container;
 
+    background-color: transparent;
+    border: none;
+
     justify-content: center;
-    flex: 1;
+    padding: 0;
 
     height: 5vh;
 
+    &:hover {
+        background-color: transparent;
+
+        svg {
+            transform: scale(0.8) !important;
+        }
+    }
+
     svg {
         transform: scale(0.7) !important;
+        transition: transform 0.1s linear;
     }
 
     &:first-of-type {
